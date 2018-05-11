@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<title>template</title>
+<link href="../../_common/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+<div class="header-contents">
+<h1>제목</h1>
+<h2>부제목</h2>
+</div><!-- /.header-contents -->
+</header>
+<div class="main-wrapper">
+<section>
+
+</section>
+</div><!-- /.main-wrapper -->
+<footer>JavaScript Samples</footer>
+<script>
+var number = Math.floor(Math.random() * 6);
+var answer = parseInt(window.prompt('숫자 맞히기 게임.'));
+var message;
+if(answer === 180) {
+	message = 'Awesome';
+} else if(answer > 180) {
+	message = 'Try Again! Hint: Smaller number'
+} else {
+	message = 'Try Again! Hint: Bigger number';
+}
+window.alert(message);
+</script>
